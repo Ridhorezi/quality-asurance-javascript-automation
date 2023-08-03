@@ -1,0 +1,34 @@
+{
+  "name": "qa-automation",
+  "version": "1.0.0",
+  "description": "Qa-Automation-Javascript-Petstore",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "firstTest": "mocha test/api/test.js",
+    "test get": "mocha test/api/testGet.js",
+    "test post": "mocha test/api/testPost.js",
+    "test post chai": "mocha test/api/chaiAssert.js",
+    "reporting" : "mocha --timeout 30000 test/api/chaiAssert.js --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ridhorezi/quality-asurance-javascript-automation.git"
+  },
+  "author": "Ridho Suhaebi Arrowi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ridhorezi/quality-asurance-javascript-automation/issues"
+  },
+  "homepage": "https://github.com/Ridhorezi/quality-asurance-javascript-automation#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
